@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting</title>
+    <style>
+        /* 
+        Write your CSS here 
+        Gap Colour: #000
+        White: #F0F1EC
+        Red: #E72F24
+        Black: #232629
+        Blue: #004592
+        Yellow: #F9D01E */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: #000;
+            display: grid;
+            grid-template-columns: 100px 260px 20px ;
+            grid-template-rows: 140px 140px 45px 45px;
+            gap:10px;
+        }
+
+        .item {
+            background-color: #F0F1EC;
+            
+        }
+
+        .red {
+            background-color:#E72F24 ;
+            grid-row-start: span 2;
+            grid-column: span 2; /* float : right; is not working here so i use SPAN */
+        }
+
+        .blue{
+            background-color:#004592 ;
+            grid-row: span 2;
+        }
+
+        .White1{
+            background-color: #F0F1EC;
+        }
+
+        .White3{
+            grid-row: span 2 ;
+        }
+
+        .Yellow{
+            background-color: #F9D01E;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item White1"></div>
+        <div class=" item red "></div>   
+        <div class="item White2"></div>
+        <div class="item blue"></div>
+        <div class="item White3"></div>
+        <div class="item White4"></div>
+        <div class="item Yellow"></div>
+    </div>
+</body>
+</html>
